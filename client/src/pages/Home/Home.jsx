@@ -1,8 +1,17 @@
 import React from 'react'
+import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts'
+import Categories from '../../components/Categories/Categories'
+import Slider from "../../components/Slider/Slider"
+import "./Home.scss"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='home'>
+      <Slider/>
+      <FeaturedProducts type="featured"/>
+      <Categories/>
+      <FeaturedProducts type="trending"/>
+    </div>
   )
 }
 
